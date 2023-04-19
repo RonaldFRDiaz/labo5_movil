@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="bordes">50dp</dimen>
+    <dimen name="dimen_cali" />
+    <dimen name="dimen_calio">16dp</dimen>
+</resources>

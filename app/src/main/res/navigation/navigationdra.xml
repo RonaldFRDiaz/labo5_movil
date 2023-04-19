@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigationdra"
+    app:startDestination="@id/bilboradFragment">
+
+    <fragment
+        android:id="@+id/bilboradFragment"
+        android:name="com.uca.laboratorio_05_rivas.bilboradFragment"
+        android:label="fragment_bilborad"
+        tools:layout="@layout/fragment_bilborad" >
+        <action
+            android:id="@+id/action_bilboradFragment_to_movieFragment"
+            app:destination="@id/movieFragment" />
+        <action
+            android:id="@+id/action_bilboradFragment_to_createmovieFragment"
+            app:destination="@id/createmovieFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/movieFragment"
+        android:name="com.uca.laboratorio_05_rivas.movieFragment"
+        android:label="fragment_movie"
+        tools:layout="@layout/fragment_movie" />
+    <fragment
+        android:id="@+id/createmovieFragment"
+        android:name="com.uca.laboratorio_05_rivas.CreatemovieFragment"
+        android:label="fragment_createmovie"
+        tools:layout="@layout/fragment_createmovie" />
+</navigation>
