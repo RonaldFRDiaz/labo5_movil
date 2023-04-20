@@ -14,8 +14,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="sans-serif-medium"
-        android:text="Billboard"
-        android:textColor="@color/BLANCO"
+        android:text="@string/titulo_b"
+        android:textColor="@color/white"
         android:textSize="60sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -27,8 +27,7 @@
         android:layout_height="wrap_content"
         android:layout_marginEnd="32dp"
         android:layout_marginBottom="32dp"
-        android:clickable="true"
-        android:contentDescription="add_movie"
+        android:contentDescription="@string/movie"
         android:contextClickable="false"
         android:src="@drawable/baseline_add_24"
         android:textAlignment="textEnd"
@@ -46,6 +45,7 @@
         app:layout_constraintTop_toBottomOf="@+id/titulo">
 
         <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/harry_movie"
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
@@ -53,6 +53,7 @@
                 android:id="@+id/imagen_harry"
                 android:layout_width="164dp"
                 android:layout_height="154dp"
+                android:contentDescription="@string/todo"
                 android:src="@drawable/harry_potter"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
@@ -65,7 +66,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="24dp"
                 android:fontFamily="sans-serif-condensed-medium"
-                android:text="Harry Potter y la piedra filosofal"
+                android:text="@string/Harry_Potter"
                 android:textColor="#FFFFFF"
                 android:textSize="24sp"
                 app:layout_constraintBottom_toTopOf="@+id/calificacion"
@@ -82,7 +83,7 @@
                 android:layout_marginStart="@dimen/dimen_calio"
                 android:layout_marginBottom="16dp"
                 android:fontFamily="sans-serif-black"
-                android:text="9.5"
+                android:text="@string/tamatext"
                 android:textColor="@color/calification"
                 android:textSize="34sp"
                 app:layout_constraintBottom_toBottomOf="parent"
